@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-	// Use a service account
 	ctx := context.Background()
 	sa := option.WithCredentialsFile("path/to/serviceAccount.json")
 	app, err := firebase.NewApp(ctx, nil, sa)
