@@ -22,9 +22,9 @@ func main() {
 	}
 	// データ追加
 	_, _, err = client.Collection("users").Add(ctx, map[string]interface{}{
-		"first": "Ada",
-		"last":  "Lovelace",
-		"born":  1815,
+		"first": "tomoki",
+		"last":  "nakayama",
+		"born":  2001,
 	})
 	if err != nil {
 		log.Fatalf("Failed adding alovelace: %v", err)
