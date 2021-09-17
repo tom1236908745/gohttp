@@ -10,7 +10,7 @@ import (
 
 func main() {
 	ctx := context.Background()
-	sa := option.WithCredentialsFile("path/to/serviceAccount.json")
+	sa := option.WithCredentialsFile("path/to/api.json")
 	app, err := firebase.NewApp(ctx, nil, sa)
 	if err != nil {
 		log.Fatalln(err)
